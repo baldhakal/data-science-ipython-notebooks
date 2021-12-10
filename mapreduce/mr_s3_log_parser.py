@@ -110,9 +110,6 @@ class MrS3LogParser(MRJob):
                     user_agent = group
                 elif n == self.S3_LOG_OPERATION:
                     operation = group
-                else:
-                    pass
-
         except Exception:
             yield (("Error while parsing line: %s", line), 1)
         else:

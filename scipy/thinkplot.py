@@ -425,8 +425,7 @@ def Diff(t):
     Returns:
         sequence of differences (length one less than t)
     """
-    diffs = [t[i+1] - t[i] for i in range(len(t)-1)]
-    return diffs
+    return [t[i+1] - t[i] for i in range(len(t)-1)]
 
 
 def Cdf(cdf, complement=False, transform=None, **options):
